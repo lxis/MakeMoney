@@ -1,6 +1,6 @@
 ﻿using Algorithm;
-using Platform;
-using Platform.data;
+using Manager;
+using Manager.data;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Database;
 
-namespace Platform
+namespace Manager
 {
     public class Platform
     {

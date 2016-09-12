@@ -100,9 +100,9 @@
       <Project>{D5DB4F78-4401-461A-AF3F-BBC96CF6E523}</Project>
       <Name>Database</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Platform\Platform.csproj">
+    <ProjectReference Include="..\Platform\Manager.csproj">
       <Project>{7f7c5181-1639-4a06-9833-377b249b0c70}</Project>
-      <Name>Platform</Name>
+      <Name>Manager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

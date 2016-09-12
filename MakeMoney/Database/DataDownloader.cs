@@ -1,5 +1,5 @@
-﻿using Platform.data;
-using Platform;
+﻿using Manager.data;
+using Manager;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Platform
+namespace Manager
 {
     // 从雅虎下载数据
     public class DataDownloader

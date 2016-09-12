@@ -1,6 +1,6 @@
-﻿using Platform.data;
+﻿using Manager.data;
 using Newtonsoft.Json;
-using Platform;
+using Manager;
 using System;
 using System.Collections.Generic;
 using System.IO;

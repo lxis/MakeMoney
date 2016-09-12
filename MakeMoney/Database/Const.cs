@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Platform
+namespace Manager
 {
     // 常量
     public class Const

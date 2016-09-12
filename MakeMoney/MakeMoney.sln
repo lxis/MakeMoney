@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeMoney", "MakeMoney\MakeMoney.csproj", "{8C90CED6-B1A3-4DEC-A0EB-4F6492624BBD}"
 EndProject
@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exchange", "Judge\Exchange.csproj", "{94D7AFAC-8956-4306-A5E4-28A1D2D1CBF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform", "Platform\Platform.csproj", "{7F7C5181-1639-4A06-9833-377B249B0C70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "Platform\Manager.csproj", "{7F7C5181-1639-4A06-9833-377B249B0C70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analysis", "Analysis\Analysis.csproj", "{1927E5B4-A7E0-4E93-982A-54985599BC69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7F7C5181-1639-4A06-9833-377B249B0C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F7C5181-1639-4A06-9833-377B249B0C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F7C5181-1639-4A06-9833-377B249B0C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1927E5B4-A7E0-4E93-982A-54985599BC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1927E5B4-A7E0-4E93-982A-54985599BC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1927E5B4-A7E0-4E93-982A-54985599BC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1927E5B4-A7E0-4E93-982A-54985599BC69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Platform.data
+namespace Manager.data
 {
     // 股票数据
     public class Stock

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Platform.data
+namespace Manager.data
 {
     // 股票一天交易的结果
     public class DayResult

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Platform.data
+namespace Manager.data
 {
     // 股票历史的HashMap结构
     public class QuickDay

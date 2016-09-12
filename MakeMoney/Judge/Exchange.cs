@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Algorithm;
-using Platform.data;
+using Manager.data;
 
 namespace Judge
 {

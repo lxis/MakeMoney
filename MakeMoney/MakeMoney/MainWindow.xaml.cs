@@ -1,5 +1,5 @@
 ﻿
-using Platform;
+using Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +25,7 @@ namespace MakeMoney
         public MainWindow()
         {
             InitializeComponent();
-            Platform.Platform.run();
+            Manager.Platform.run();
             
             //DataDownloader.run();
         }
