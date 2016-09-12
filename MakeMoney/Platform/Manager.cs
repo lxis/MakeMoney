@@ -30,7 +30,7 @@ namespace Manager
                 history.quickDay.SetLimitDate(startTime);
                 Operations operations = ZhihuAlgorithm.calcaulate(history.quickDay, startTime, holds);
                 
-                Judge.Exchange.Match(history, startTime, operations, holds);
+                Exchange.ExchangeExecutor.Match(history, startTime, operations, holds);
                 if (startTime.DayOfYear == 1)
                 {
                     Console.WriteLine(startTime);

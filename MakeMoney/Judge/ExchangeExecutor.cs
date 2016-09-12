@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Algorithm;
 using Manager.data;
 
-namespace Judge
+namespace Exchange
 {
     // 交易所，负责撮合交易，需要尽量模拟真实情况。
-    public class Exchange
+    public class ExchangeExecutor
     {
         public static void Match(History history, DateTime time, Operations operations, Holds holds)
         {
