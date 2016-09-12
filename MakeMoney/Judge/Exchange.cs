@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Algorithm;
-using Database.data;
+using Platform.data;
 
 namespace Judge
 {
+    // 交易所，负责撮合交易，需要尽量模拟真实情况。
     public class Exchange
     {
         public static void Match(History history, DateTime time, Operations operations, Holds holds)
@@ -15,7 +16,7 @@ namespace Judge
             foreach (Operation operation in operations.operations)
             {
 
-                Day day = history.quickDay.getDay(operation.StockName,time);
+                DayResult day = history.quickDay.GetDay(operation.StockName,time);
                 if (day == null)
                 {
                     continue;

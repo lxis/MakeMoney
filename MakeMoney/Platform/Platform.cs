@@ -1,6 +1,6 @@
 ﻿using Algorithm;
-using Database;
-using Database.data;
+using Platform;
+using Platform.data;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Database;
 
 namespace Platform
 {
@@ -47,7 +48,7 @@ namespace Platform
             decimal result = holds.cash;
             foreach (var holdStock in holds.holds)
             {
-                var day = history.quickDay.getDay(holdStock.stockName, endTime);
+                var day = history.quickDay.GetDay(holdStock.stockName, endTime);
                 if (day == null)
                 {
                     continue; ;

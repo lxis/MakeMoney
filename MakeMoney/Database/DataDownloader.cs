@@ -1,4 +1,4 @@
-﻿using Database.data;
+﻿using Platform.data;
 using Platform;
 using System;
 using System.Collections.Generic;
@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database
+namespace Platform
 {
+    // 从雅虎下载数据
     public class DataDownloader
     {
         public static async void run()
@@ -54,7 +55,7 @@ namespace Database
                 {
                     continue;
                 }
-                Day data = new Day();
+                DayResult data = new DayResult();
                 string[] items = line.Split(',');
                 if (items.Length < 6)
                 {

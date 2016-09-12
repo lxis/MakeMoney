@@ -1,4 +1,4 @@
-﻿using Database.data;
+﻿using Platform.data;
 using Newtonsoft.Json;
 using Platform;
 using System;
@@ -11,6 +11,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Database
 {
+    // 从本地加载历史数据
     public class DataLoader
     {
         public static History loadHistory()

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Platform
 {
+    // 常量
     public class Const
     {
         public const string PATH =  @"D:\Personal\MakeMoney\Github\MakeMoney\Data\";

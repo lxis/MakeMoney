@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database.data
+namespace Platform.data
 {
+    // 股票数据
     public class Stock
     {
-
+        // 股票名
         public string name;
-        public List<Day> days = new List<Day>();
+        // 股票每天的交易记录
+        public List<DayResult> days = new List<DayResult>();
     }
 }

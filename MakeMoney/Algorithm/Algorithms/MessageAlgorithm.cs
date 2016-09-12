@@ -1,4 +1,4 @@
-﻿using Database.data;
+﻿using Platform.data;
 using System;
 using System.Collections.Generic;
 
@@ -12,7 +12,7 @@ namespace Algorithm
             Operations operations = new Operations();
             foreach (Hold hold in holds.holds)
             {
-                var day = history.getDay(hold.stockName, date);
+                var day = history.GetDay(hold.stockName, date);
                 if (day == null)
                 {
                     continue;
@@ -25,15 +25,15 @@ namespace Algorithm
             }
             foreach (var stockName in history.stocks.Keys)
             {
-                List<Day> days = new List<Day>();
-                Day currentDay = history.getDay(stockName, date.AddDays(0));
+                List<DayResult> days = new List<DayResult>();
+                DayResult currentDay = history.GetDay(stockName, date.AddDays(0));
                 if (currentDay == null || currentDay.volume == 0)
                 {
                     continue;
                 }
                 for (int i = 1; i < 50; i++)
                 {
-                    Day day = history.getDay(stockName, date.AddDays(-i));
+                    DayResult day = history.GetDay(stockName, date.AddDays(-i));
                     if (day != null && day.volume != 0)
                     {
                         days.Add(day);
@@ -44,7 +44,7 @@ namespace Algorithm
                     continue;
                 }
                 bool isNotMatch = false;
-                foreach (Day day in days)
+                foreach (DayResult day in days)
                 {
                     if (day.volume > currentDay.volume / 3)
                     {

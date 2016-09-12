@@ -1,4 +1,4 @@
-﻿using Database.data;
+﻿using Platform.data;
 using System;
 using System.Collections.Generic;
 
@@ -11,7 +11,7 @@ namespace Algorithm
             Operations operations = new Operations();
             foreach (Hold hold in holds.holds)
             {
-                var day = history.getDay(hold.stockName, date);
+                var day = history.GetDay(hold.stockName, date);
                 if (day == null)
                 {
                     continue;
@@ -26,7 +26,7 @@ namespace Algorithm
 
             foreach (var stockName in history.stocks.Keys)
             {
-                Day currentDay = history.getDay(stockName, date.AddDays(0));
+                DayResult currentDay = history.GetDay(stockName, date.AddDays(0));
                 if (currentDay == null || currentDay.volume == 0)
                 {
                     continue;
