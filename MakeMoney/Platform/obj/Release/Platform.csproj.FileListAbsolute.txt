@@ -1,0 +1,14 @@
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Platform.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Platform.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Algorithm.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Database.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Judge.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Newtonsoft.Json.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Algorithm.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Database.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Judge.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Newtonsoft.Json.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\bin\Release\Newtonsoft.Json.xml
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\obj\Release\Platform.csprojResolveAssemblyReference.cache
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\obj\Release\Platform.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Platform\obj\Release\Platform.pdb

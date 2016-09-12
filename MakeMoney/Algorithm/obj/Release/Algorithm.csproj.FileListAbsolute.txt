@@ -1,0 +1,10 @@
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\bin\Release\Algorithm.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\bin\Release\Algorithm.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\bin\Release\Database.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\bin\Release\Newtonsoft.Json.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\bin\Release\Database.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\bin\Release\Newtonsoft.Json.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\bin\Release\Newtonsoft.Json.xml
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\obj\Release\Algorithm.csprojResolveAssemblyReference.cache
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\obj\Release\Algorithm.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\obj\Release\Algorithm.pdb

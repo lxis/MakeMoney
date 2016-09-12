@@ -1,0 +1,7 @@
+E:\Personal\Money\MakeMoney\MakeMoney\Database\bin\Release\Database.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Database\bin\Release\Database.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Database\bin\Release\Newtonsoft.Json.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Database\bin\Release\Newtonsoft.Json.pdb
+E:\Personal\Money\MakeMoney\MakeMoney\Database\bin\Release\Newtonsoft.Json.xml
+E:\Personal\Money\MakeMoney\MakeMoney\Database\obj\Release\Database.dll
+E:\Personal\Money\MakeMoney\MakeMoney\Database\obj\Release\Database.pdb
