@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="DataDownloader.cs" />
     <Compile Include="DataLoader.cs" />
+    <Compile Include="Const.cs" />
     <Compile Include="data\Day.cs" />
     <Compile Include="data\History.cs" />
     <Compile Include="data\QuickDay.cs" />

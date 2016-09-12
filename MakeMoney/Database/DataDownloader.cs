@@ -1,4 +1,5 @@
 ﻿using Database.data;
+using Platform;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,7 +27,7 @@ namespace Database
                         continue;
                     }
                     String stockJson = Newtonsoft.Json.JsonConvert.SerializeObject(stock);
-                    var stream = File.CreateText(@"E:\Personal\Money\MakeMoney\Data\" + stock.name);
+                    var stream = File.CreateText(Const.PATH + stock.name);
                     await stream.WriteAsync(stockJson);
                     stream.Dispose();
                     //history.days.Add(stock);

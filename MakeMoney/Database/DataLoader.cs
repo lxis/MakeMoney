@@ -1,11 +1,13 @@
 ﻿using Database.data;
 using Newtonsoft.Json;
+using Platform;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Database
 {
@@ -13,8 +15,9 @@ namespace Database
     {
         public static History loadHistory()
         {
-            History history = new History();
-            DirectoryInfo directory = new DirectoryInfo(@"E:\Personal\Money\MakeMoney\Data\");
+            History history = new History();            
+            //System.Environment.CurrentDirectory "D:\\Personal\\MakeMoney\\Github\\MakeMoney\\MakeMoney\\MakeMoney\\bin\\Debug\\" 
+            DirectoryInfo directory = new DirectoryInfo(Const.PATH);
             var files = directory.GetFiles();
             for (int i = 0;i< files.Count();i++)
             {
