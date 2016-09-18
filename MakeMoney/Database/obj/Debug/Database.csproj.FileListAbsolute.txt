@@ -6,3 +6,12 @@ E:\Personal\Money\MakeMoney\MakeMoney\Database\obj\Debug\Database.pdb
 E:\Personal\Money\MakeMoney\MakeMoney\Database\bin\Debug\Newtonsoft.Json.dll
 E:\Personal\Money\MakeMoney\MakeMoney\Database\bin\Debug\Newtonsoft.Json.pdb
 E:\Personal\Money\MakeMoney\MakeMoney\Database\bin\Debug\Newtonsoft.Json.xml
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\bin\Debug\Database.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\bin\Debug\Database.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\bin\Debug\Newtonsoft.Json.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\bin\Debug\Newtonsoft.Json.xml
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\obj\Debug\Database.csprojResolveAssemblyReference.cache
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\obj\Debug\Database.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\obj\Debug\Database.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\bin\Debug\Analysis.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Database\bin\Debug\Analysis.pdb

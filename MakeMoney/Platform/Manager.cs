@@ -9,20 +9,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Database;
+using Analysis;
 
 namespace Manager
 {
     public class Platform
     {
-        public static void run()
+        public static async Task run()
         {
-            Console.WriteLine("开始");
+            ResultContainer.Instance.addOutput("开始");
             DateTime startTime = new DateTime(1990, 12, 19);
             DateTime endTime = new DateTime(2016, 8, 1);
-            History history = DataLoader.loadHistory();
-            Console.WriteLine("加载结束");
+            History history = await DataLoader.loadHistory();
+            ResultContainer.Instance.addOutput("加载结束");
             history.quickDay = new QuickDay(history);
-            Console.WriteLine("转换结束");
+            ResultContainer.Instance.addOutput("转换结束");
             Holds holds = new Holds();
             holds.cash = 100000;
             while (startTime < endTime)
@@ -33,7 +34,7 @@ namespace Manager
                 Exchange.ExchangeExecutor.Match(history, startTime, operations, holds);
                 if (startTime.DayOfYear == 1)
                 {
-                    Console.WriteLine(startTime);
+                    ResultContainer.Instance.addOutput(startTime.ToString());
                     calculateResult(startTime, history, holds);
                 }
                 startTime = startTime.AddDays(1);
@@ -55,7 +56,7 @@ namespace Manager
                 }
                 result += day.adjClose * holdStock.amount;
             }
-            Console.WriteLine(result);
+            ResultContainer.Instance.addOutput(result.ToString());
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Algorithm
                 {
                     continue;
                 }
-                if (hold.buyTime.AddDays(10) > date)
+                if (hold.buyTime.AddDays(100) > date)
                 {
                     continue;
                 }
@@ -41,7 +41,7 @@ namespace Algorithm
         {
             Operation operation = new Operation();
             operation.StockName = stockName;
-            operation.amount = 1000 / currentPrice;
+            operation.amount = 10000 / currentPrice;
             operation.Type = OperationType.Buy;
             return operation;
         }

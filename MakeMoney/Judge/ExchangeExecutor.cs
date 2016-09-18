@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Algorithm;
 using Manager.data;
+using Analysis;
 
 namespace Exchange
 {
@@ -39,7 +40,7 @@ namespace Exchange
                             hold.amount += operation.amount;
                             hold.buyTime = time;
                             hold.buyPrice = price;
-                            //Console.WriteLine("Buy:" + hold.stockName + "," + operation.amount + "," + time);
+                            ResultContainer.Instance.addTrade(new Trade() { name = hold.stockName, date = time, type = TradeType.Buy });
                             break;
                         }
                     }
@@ -50,7 +51,7 @@ namespace Exchange
                         hold.amount = operation.amount;
                         hold.buyTime = time;
                         hold.buyPrice = price;
-                        //Console.WriteLine("Buy:" + hold.stockName + "," + hold.amount + "," + time);
+                        ResultContainer.Instance.addTrade( new Trade() { name = hold.stockName, date = time, type = TradeType.Buy });
                         holds.holds.Add(hold);
                     }
 
@@ -73,7 +74,7 @@ namespace Exchange
                             }
                             decimal benefit = (price - hold.buyPrice) * soldAmount;
                             decimal percent = (price - hold.buyPrice) / hold.buyPrice;
-                            //Console.WriteLine("Sell:" + hold.stockName + "," +  Convert.ToInt32(soldAmount) + "," + hold.buyTime + "," + time + "," + Convert.ToInt32(benefit) + "，"+ price + "，" + hold.buyPrice + "，"  + percent);
+                            ResultContainer.Instance.addTrade( new Trade() { name = hold.stockName, date = time, type = TradeType.Sell });
                             holds.cash += soldAmount * price;
                             break;
                         }

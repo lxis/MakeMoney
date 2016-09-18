@@ -10,3 +10,17 @@ E:\Personal\Money\MakeMoney\MakeMoney\Judge\bin\Debug\Newtonsoft.Json.xml
 E:\Personal\Money\MakeMoney\MakeMoney\Judge\obj\Debug\Exchange.csprojResolveAssemblyReference.cache
 E:\Personal\Money\MakeMoney\MakeMoney\Judge\obj\Debug\Judge.dll
 E:\Personal\Money\MakeMoney\MakeMoney\Judge\obj\Debug\Judge.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Judge.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Judge.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Algorithm.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Database.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Newtonsoft.Json.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Algorithm.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Database.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Newtonsoft.Json.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Newtonsoft.Json.xml
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\obj\Debug\Exchange.csprojResolveAssemblyReference.cache
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\obj\Debug\Judge.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\obj\Debug\Judge.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Analysis.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Judge\bin\Debug\Analysis.pdb

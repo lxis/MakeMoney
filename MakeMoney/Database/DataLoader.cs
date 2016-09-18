@@ -8,13 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
+using Analysis;
 
 namespace Database
 {
     // 从本地加载历史数据
     public class DataLoader
     {
-        public static History loadHistory()
+        public static async Task<History> loadHistory()
         {
             History history = new History();            
             //System.Environment.CurrentDirectory "D:\\Personal\\MakeMoney\\Github\\MakeMoney\\MakeMoney\\MakeMoney\\bin\\Debug\\" 
@@ -24,7 +25,7 @@ namespace Database
             {
 
                 var fileReader = files[i].OpenText();
-                string text = fileReader.ReadToEnd();
+                string text = await fileReader.ReadToEndAsync();
                 Stock stock = JsonConvert.DeserializeObject<Stock>(text);
                 history.stocks.Add(stock);
             }

@@ -49,6 +49,10 @@
       <Project>{cfa6bcfe-acc4-4bde-b2d8-a4a4351449dc}</Project>
       <Name>Algorithm</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Analysis\Analysis.csproj">
+      <Project>{1927E5B4-A7E0-4E93-982A-54985599BC69}</Project>
+      <Name>Analysis</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Database\Database.csproj">
       <Project>{d5db4f78-4401-461a-af3f-bbc96cf6e523}</Project>
       <Name>Database</Name>

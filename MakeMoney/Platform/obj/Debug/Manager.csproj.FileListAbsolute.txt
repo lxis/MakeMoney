@@ -1,0 +1,15 @@
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Platform.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Platform.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Algorithm.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Database.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Judge.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Algorithm.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Database.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Judge.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Newtonsoft.Json.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Newtonsoft.Json.xml
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\obj\Debug\Manager.csprojResolveAssemblyReference.cache
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\obj\Debug\Platform.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\obj\Debug\Platform.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Analysis.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Platform\bin\Debug\Analysis.pdb

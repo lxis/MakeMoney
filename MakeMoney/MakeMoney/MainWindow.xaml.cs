@@ -1,4 +1,5 @@
 ﻿
+using Analysis;
 using Manager;
 using System;
 using System.Collections.Generic;
@@ -25,9 +26,41 @@ namespace MakeMoney
         public MainWindow()
         {
             InitializeComponent();
-            Manager.Platform.run();
-            
+            //text.Text = 
+
+            ResultContainer.Instance.addOutputHandler((s) => text.Text = s + Environment.NewLine + text.Text);
+            startButton.Click += (s, o) =>
+            {
+                click();
+            };
             //DataDownloader.run();
+            analysisButton.Click += (s, o) =>
+            {
+                navigateToAnalysis();
+            };
+        }
+
+        private void navigateToAnalysis()
+        {
+            new AnalysisWindow().Show();
+                
+        }
+
+        private async void click()
+        {
+            await Manager.Platform.run();
+
+            showTrades();
+        }
+
+        private void showTrades()
+        {
+            List<Trade> trades = ResultContainer.Instance.getTrades();
+            trades.ForEach((s)=> 
+            {
+                text.Text = s.name + Environment.NewLine + text.Text;
+            });
+            
         }
     }
 }

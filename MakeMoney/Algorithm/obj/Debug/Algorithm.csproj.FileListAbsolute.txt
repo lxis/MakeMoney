@@ -8,3 +8,13 @@ E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\bin\Debug\Newtonsoft.Json.xml
 E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.csprojResolveAssemblyReference.cache
 E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.dll
 E:\Personal\Money\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Algorithm.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Algorithm.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Database.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Newtonsoft.Json.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Database.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Newtonsoft.Json.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Newtonsoft.Json.xml
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.csprojResolveAssemblyReference.cache
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.pdb
