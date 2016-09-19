@@ -8,6 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid           >
         <Grid.RowDefinitions>
+            <RowDefinition Height="10"></RowDefinition>
             <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
@@ -15,10 +16,10 @@
             <ColumnDefinition Width="100"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ScrollViewer  Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" >
+        <ScrollViewer  Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" >
             <TextBlock Background="AliceBlue" x:Name="text" Text="显示" />
         </ScrollViewer>
-        <Button x:Name="startButton" Grid.Row="0" Grid.Column="0" Content="开始" ></Button>
-        <Button x:Name="analysisButton" Grid.Row="1" Grid.Column="0" Content="分析"></Button>
+        <Button x:Name="startButton" Grid.Row="1" Grid.Column="0" Content="开始" ></Button>
+        <Button x:Name="analysisButton" Grid.Row="2" Grid.Column="0" Content="分析"></Button>
     </Grid>
 </Window>

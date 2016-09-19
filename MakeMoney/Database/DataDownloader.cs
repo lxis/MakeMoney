@@ -84,8 +84,9 @@ namespace Manager
         private static List<String> getStockNameList()
         {
             List<String> stockNames = new List<string>();
-            stockNames.AddRange(getHuStockNameList());
-            stockNames.AddRange(getShenStockNameList());
+            stockNames.Add("000001.ss");//沪指
+            //stockNames.AddRange(getHuStockNameList());
+            //stockNames.AddRange(getShenStockNameList());
             return stockNames;
         }
 

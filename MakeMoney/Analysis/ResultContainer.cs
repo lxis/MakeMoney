@@ -26,6 +26,9 @@ namespace Analysis
         }
 
         private List<Trade> mTrade = new List<Trade>();
+        private List<YearResult> mYearResults = new List<YearResult>();
+        private List<String> mBenefits = new List<String>();
+        private List<String> mRisks = new List<String>();
 
 
         public void addOutput(String output)
@@ -46,6 +49,37 @@ namespace Analysis
         public List<Trade> getTrades()
         {
             return mTrade;
+        }
+
+        public void addBenefit(String benefit)
+        {
+            mBenefits.Add(benefit);
+        }
+
+        public void addRisk(String risk)
+        {
+            mRisks.Add(risk);
+        }
+
+        public List<String> getBenefits()
+        {
+            return mBenefits;
+        }
+
+        public List<String> getRisks()
+        {
+            return mRisks;
+        }
+        
+        
+        public void addYearResult(YearResult yearResult)
+        {
+            mYearResults.Add(yearResult);            
+        }
+
+        public List<YearResult> getYearResults()
+        {
+            return mYearResults;
         }
 
     }

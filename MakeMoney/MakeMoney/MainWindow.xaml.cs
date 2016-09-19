@@ -26,8 +26,6 @@ namespace MakeMoney
         public MainWindow()
         {
             InitializeComponent();
-            //text.Text = 
-
             ResultContainer.Instance.addOutputHandler((s) => text.Text = s + Environment.NewLine + text.Text);
             startButton.Click += (s, o) =>
             {
@@ -50,7 +48,7 @@ namespace MakeMoney
         {
             await Manager.Platform.run();
 
-            showTrades();
+            //showTrades();
         }
 
         private void showTrades()

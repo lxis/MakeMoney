@@ -11,7 +11,16 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="tradeResult" Grid.Row="0"></TextBlock>
-        <Button x:Name="analysis" Grid.Row="1"></Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
+        <TextBlock x:Name="tradeResult"  ></TextBlock>
+        </ScrollViewer>
+        <Button x:Name="analysisTimes" Grid.Row="1" Content="分析交易次数" Grid.Column="0"></Button>
+        <Button x:Name="analysisBenefit" Grid.Row="1" Content="分析收益" Grid.Column="1"></Button>
+        <Button x:Name="analysisRisk" Grid.Row="1" Content="分析风险" Grid.Column="2"></Button>
     </Grid>
 </Window>
