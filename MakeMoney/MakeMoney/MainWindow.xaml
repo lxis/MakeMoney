@@ -5,21 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MakeMoney"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600" Width="800">
     <Grid           >
         <Grid.RowDefinitions>
-            <RowDefinition Height="10"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ScrollViewer  Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" >
-            <TextBlock Background="AliceBlue" x:Name="text" Text="显示" />
+        <ScrollViewer  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+            <TextBlock x:Name="text" Text="显示" />
         </ScrollViewer>
-        <Button x:Name="startButton" Grid.Row="1" Grid.Column="0" Content="开始" ></Button>
-        <Button x:Name="analysisButton" Grid.Row="2" Grid.Column="0" Content="分析"></Button>
+        <Button x:Name="startButton" Grid.Row="0" Grid.Column="0" Content="开始" ></Button>
+        <Button x:Name="analysisButton" Grid.Row="0" Grid.Column="1" Content="分析"></Button>
     </Grid>
 </Window>

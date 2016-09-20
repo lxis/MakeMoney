@@ -40,9 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analyst.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultContainer.cs" />
+    <Compile Include="ShowFormat\BenefitShow.cs" />
+    <Compile Include="ShowFormat\TimeShow.cs" />
     <Compile Include="Trade.cs" />
     <Compile Include="YearResult.cs" />
   </ItemGroup>

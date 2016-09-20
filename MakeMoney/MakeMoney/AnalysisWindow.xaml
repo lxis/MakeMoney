@@ -5,22 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MakeMoney"
         mc:Ignorable="d"
-        Title="AnalysisWindow" Height="300" Width="300">
+        Title="AnalysisWindow" Height="600" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ScrollViewer Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3">
-        <TextBlock x:Name="tradeResult"  ></TextBlock>
+        <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <DataGrid x:Name="tradeResultGrid" ItemsSource="{Binding}" AutoGenerateColumns="True" >
+
+            </DataGrid>
         </ScrollViewer>
-        <Button x:Name="analysisTimes" Grid.Row="1" Content="分析交易次数" Grid.Column="0"></Button>
-        <Button x:Name="analysisBenefit" Grid.Row="1" Content="分析收益" Grid.Column="1"></Button>
-        <Button x:Name="analysisRisk" Grid.Row="1" Content="分析风险" Grid.Column="2"></Button>
+        
+        <Button x:Name="analysisTimes" Grid.Row="0" Content="分析交易次数" Grid.Column="0"></Button>
+        <Button x:Name="analysisBenefit" Grid.Row="0" Content="分析收益" Grid.Column="1"></Button>
     </Grid>
 </Window>
