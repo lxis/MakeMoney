@@ -1,0 +1,7 @@
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\bin\x64\Debug\MakeMoney.exe.config
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\obj\x64\Debug\MakeMoney.csprojResolveAssemblyReference.cache
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\obj\x64\Debug\AnalysisWindow.g.cs
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\obj\x64\Debug\MainWindow.g.cs
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\obj\x64\Debug\App.g.cs
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\obj\x64\Debug\MakeMoney_MarkupCompile.cache
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\obj\x64\Debug\MakeMoney_MarkupCompile.lref

@@ -23,10 +23,7 @@ namespace Database
             var files = directory.GetFiles();
             for (int i = 0;i< files.Count();i++)
             {
-                //if (i > 10)
-                //{
-                //    break;
-                //}
+
                 var fileReader = files[i].OpenText();
                 string text = await fileReader.ReadToEndAsync();
                 Stock stock = JsonConvert.DeserializeObject<Stock>(text);

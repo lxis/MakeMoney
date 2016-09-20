@@ -23,3 +23,6 @@ E:\Personal\Money\MakeMoney\MakeMoney\MakeMoney\obj\Release\MakeMoney.Properties
 E:\Personal\Money\MakeMoney\MakeMoney\MakeMoney\obj\Release\MakeMoney.csproj.GenerateResource.Cache
 E:\Personal\Money\MakeMoney\MakeMoney\MakeMoney\obj\Release\MakeMoney.exe
 E:\Personal\Money\MakeMoney\MakeMoney\MakeMoney\obj\Release\MakeMoney.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\bin\Release\MakeMoney.exe.config
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\obj\Release\MakeMoney.exe
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\MakeMoney\obj\Release\MakeMoney.pdb

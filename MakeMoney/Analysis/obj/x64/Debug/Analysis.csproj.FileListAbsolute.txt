@@ -1,0 +1,5 @@
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Analysis\bin\x64\Debug\Analysis.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Analysis\bin\x64\Debug\Analysis.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Analysis\obj\x64\Debug\Analysis.csprojResolveAssemblyReference.cache
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Analysis\obj\x64\Debug\Analysis.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Analysis\obj\x64\Debug\Analysis.pdb

@@ -12,12 +12,12 @@ namespace Exchange
     // 交易所，负责撮合交易，需要尽量模拟真实情况。
     public class ExchangeExecutor
     {
-        public static void Match(History history, DateTime time, Operations operations, Holds holds)
+        public static void Match(QuickDay quickDay, DateTime time, Operations operations, Holds holds)
         {
             foreach (Operation operation in operations.operations)
             {
 
-                DayResult day = history.quickDay.GetDay(operation.StockName,time);
+                DayResult day = quickDay.GetDay(operation.StockName,time);
                 if (day == null)
                 {
                     continue;
