@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Analysis;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -27,14 +28,14 @@ namespace Manager.data
                 stocks.Add(stock.name, stockDic); 
                 foreach (var day in stock.days)
                 {
-                    stockDic.Add(day.Date, day);
+                    stockDic.Add(day.date, day);
                 }
             }
 
             market = new KeyValuePair<string, Dictionary<DateTime, DayResult>>("000001.ss", new Dictionary<DateTime, DayResult>());
             foreach (var day in history.market.days)
             {
-                market.Value.Add(day.Date, day);
+                market.Value.Add(day.date, day);
             }
         }
 
@@ -88,7 +89,7 @@ namespace Manager.data
 
         public async Task load()
         {
-            DirectoryInfo directory = new DirectoryInfo(Const.QuickPATH);
+            DirectoryInfo directory = new DirectoryInfo(Const.PATH);
             var files = directory.GetFiles();
             for (int i = 0; i < files.Count(); i++)
             {
@@ -103,6 +104,10 @@ namespace Manager.data
                 else
                 {
                     stocks.Add(stock.Key, stock.Value);
+                }
+                if (i % 100 == 0)
+                {
+                    ResultContainer.Instance.addOutput("已加载完" + i + "个");
                 }
             }
         }

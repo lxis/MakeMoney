@@ -32,7 +32,7 @@ namespace Algorithm
                 {
                     continue;
                 }
-                DateTime currentDate = currentDay.Date;
+                DateTime currentDate = currentDay.date;
                     operations.operations.Add(buy(stockName, currentDay.adjClose));
             }
             return operations;

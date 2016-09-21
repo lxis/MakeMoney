@@ -15,28 +15,30 @@ namespace Database
     // 从本地加载历史数据
     public class DataLoader
     {
-        public static async Task<History> loadHistory()
+        public static async Task<QuickDay> loadHistory()
         {
-            History history = new History();            
-            //System.Environment.CurrentDirectory "D:\\Personal\\MakeMoney\\Github\\MakeMoney\\MakeMoney\\MakeMoney\\bin\\Debug\\" 
+            QuickDay quickDay = new QuickDay();            
             DirectoryInfo directory = new DirectoryInfo(Const.PATH);
             var files = directory.GetFiles();
             for (int i = 0;i< files.Count();i++)
             {
-
-                var fileReader = files[i].OpenText();
+                var fileReader = files[i].OpenText();                
                 string text = await fileReader.ReadToEndAsync();
-                Stock stock = JsonConvert.DeserializeObject<Stock>(text);
-                if (stock.name == "000001.ss")
+                KeyValuePair<string, Dictionary<DateTime, DayResult>> stock = JsonConvert.DeserializeObject<KeyValuePair<string, Dictionary<DateTime, DayResult>>>(text);
+                if (stock.Key == "000001.ss")
                 {
-                    history.market = stock;
+                    quickDay.market = stock;
                 }
                 else
                 {
-                    history.stocks.Add(stock);
+                    quickDay.stocks.Add(stock.Key, stock.Value);
+                }
+                if (i % 100 == 0)
+                {
+                    ResultContainer.Instance.addOutput("已加载完" + i + "个");
                 }
             }
-            return history;
+            return quickDay;
         }
     }
 }

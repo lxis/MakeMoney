@@ -18,3 +18,5 @@ D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Newtonsoft.
 D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.csprojResolveAssemblyReference.cache
 D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.dll
 D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\obj\Debug\Algorithm.pdb
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Analysis.dll
+D:\Personal\MakeMoney\Github\MakeMoney\MakeMoney\Algorithm\bin\Debug\Analysis.pdb

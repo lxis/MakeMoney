@@ -6,6 +6,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Database;
+using System.Net.Http;
 
 namespace Manager
 {
@@ -14,36 +16,33 @@ namespace Manager
     {
         public static async void run()
         {
-            History history = new History();
-            List<String> stockNames = getStockNameList();
+            List<string> stockNames = StockListProvider.getStockNameList();
             foreach(var stockName in stockNames)
             {
                 string result = await downloadOnce(stockName);
                 try
                 {
-                    Stock stock = getStock(result);
-                    stock.name = stockName;
-                    if (stock.days.Count == 0)
+                    KeyValuePair<string, Dictionary<DateTime, DayResult>> stock = getStock(stockName,result);
+                    if (stock.Value.Count == 0)
                     {
                         continue;
                     }
                     String stockJson = Newtonsoft.Json.JsonConvert.SerializeObject(stock);
-                    var stream = File.CreateText(Const.PATH + stock.name);
+                    var stream = File.CreateText(Const.PATH + stockName);
                     await stream.WriteAsync(stockJson);
                     stream.Dispose();
-                    //history.days.Add(stock);
                 }
-                catch(Exception ex)
+                catch(Exception)
                 {
 
                 }
             }
         }
 
-        private static Stock getStock(string result)
+        private static KeyValuePair<string, Dictionary<DateTime, DayResult>> getStock(string stockName, string result)
         {
             string[] lines = result.Split('\n');
-            Stock dataList = new Stock();
+            KeyValuePair<string, Dictionary<DateTime, DayResult>> dataList = new KeyValuePair<string, Dictionary<DateTime, DayResult>>(stockName, new Dictionary<DateTime, DayResult>());
             for (int i = 0; i < lines.Count(); i++)
             {
                 if (i == 0)
@@ -61,7 +60,9 @@ namespace Manager
                 {
                     continue;
                 }
-                data.date = items[0];
+
+                String[] dayTexts = items[0].Split('-');
+                data.date = new DateTime(Convert.ToInt32(dayTexts[0]), Convert.ToInt32(dayTexts[1]), Convert.ToInt32(dayTexts[2]));
 
                 try
                 {
@@ -76,59 +77,14 @@ namespace Manager
                 {
                     continue;
                 }
-                dataList.days.Add(data);
+                dataList.Value.Add(data.date, data);
             }
             return dataList;
         }
 
-        private static List<String> getStockNameList()
+        private static async Task<string> downloadOnce(string company)
         {
-            List<String> stockNames = new List<string>();
-            stockNames.Add("000001.ss");//沪指
-            //stockNames.AddRange(getHuStockNameList());
-            //stockNames.AddRange(getShenStockNameList());
-            return stockNames;
-        }
-
-        private static List<string> getShenStockNameList()
-        {
-
-            List<String> stockNames = new List<string>();
-            for (int i = 0; i < 10000; i++)
-            {
-                String name = i.ToString();
-                if (name.Length < 4)
-                {
-                    name = "0" + name;
-                }
-                name = "00" + name + ".SZ";
-                stockNames.Add(name);
-            }
-            return stockNames;
-        }
-
-        private static List<string> getHuStockNameList()
-        {
-            List<String> stockNames = new List<string>();
-            for (int i = 0;i<1000;i++)
-            {
-                String name = i.ToString();
-                while (name.Length<3)
-                {
-                    name = "0" + name;
-                }
-                name = name + ".SS";
-                stockNames.Add("600" + name);
-                stockNames.Add("601" + name);
-                stockNames.Add("603" + name);
-            }
-            return stockNames;
-        }
-
-        private static async Task<String> downloadOnce(string company)
-        {
-            System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
-            var response = await client.GetAsync("http://ichart.yahoo.com/table.csv?s="+company+"&a=00&b=00&c=1900&d=31&e=7&f=2016&g=d");
+            var response = await new HttpClient().GetAsync("http://ichart.yahoo.com/table.csv?s="+company+"&a=00&b=00&c=1900&d=00&e=00&f=2020&g=d");
             return await response.Content.ReadAsStringAsync();
         }
     }

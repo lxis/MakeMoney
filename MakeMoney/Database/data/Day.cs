@@ -10,7 +10,7 @@ namespace Manager.data
     public class DayResult
     {
         // 日期，String型
-        public string date;
+        public DateTime date;
         // 开盘价
         public decimal open;
         // 最高价
@@ -23,14 +23,5 @@ namespace Manager.data
         public decimal volume;
         // 复权后的收盘价
         public decimal adjClose;
-        // 日期，DateTime型
-        public DateTime Date
-        {
-            get
-            {
-                String[] dayTexts = date.Split('-');
-                return new DateTime(Convert.ToInt32(dayTexts[0]), Convert.ToInt32(dayTexts[1]), Convert.ToInt32(dayTexts[2]));
-            }
-        }
     }
 }
