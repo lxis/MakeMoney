@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\IAlgorithm.cs" />
     <Compile Include="Algorithms\ZhihuAlgorithm.cs" />
     <Compile Include="Hold.cs" />
     <Compile Include="Holds.cs" />

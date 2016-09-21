@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithm
 {
+    // 一次股票操作
     public class Operation
     {
         public OperationType Type;

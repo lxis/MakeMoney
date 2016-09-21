@@ -1,12 +1,13 @@
-﻿using Manager.data;
+﻿using Algorithm.Algorithms;
+using Manager.data;
 using System;
 using System.Collections.Generic;
 
 namespace Algorithm
 {
-    public class ZhihuAlgorithm
+    public class ZhihuAlgorithm : IAlgorithm
     {
-        public static Operations calcaulate(QuickDay history, DateTime date, Holds holds)
+        public Operations calcaulate(QuickDay history, DateTime date, Holds holds)
         {
             Operations operations = new Operations();
             foreach (Hold hold in holds.holds)
@@ -16,7 +17,7 @@ namespace Algorithm
                 {
                     continue;
                 }
-                if (hold.buyTime.AddDays(100) > date)
+                if (hold.buyTime.AddDays(1000) > date)
                 {
                     continue;
                 }
@@ -41,7 +42,7 @@ namespace Algorithm
         {
             Operation operation = new Operation();
             operation.StockName = stockName;
-            operation.amount = 10000 / currentPrice;
+            operation.amount = 50000 / currentPrice;
             operation.Type = OperationType.Buy;
             return operation;
         }

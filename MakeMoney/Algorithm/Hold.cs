@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithm
 {
+    // 用户当前的一个持股状态
     public class Hold
     {
         public String stockName;

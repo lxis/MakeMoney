@@ -18,8 +18,10 @@ namespace Manager
         public static async Task run()
         {
             ResultContainer.Instance.addOutput("开始");
-            DateTime startTime = new DateTime(1990, 12, 19);
-            DateTime endTime = new DateTime(2016, 8, 1);
+            //DateTime startTime = new DateTime(1990, 12, 19);
+            //DateTime endTime = new DateTime(2016, 8, 1);
+            DateTime startTime = new DateTime(1996, 1, 1);
+            DateTime endTime = new DateTime(2016, 1, 1);
             //History history = await DataLoader.loadHistory();
             //ResultContainer.Instance.addOutput("加载结束");
             QuickDay quickDay = new QuickDay();
@@ -31,7 +33,7 @@ namespace Manager
             while (startTime < endTime)
             {
                 quickDay.SetLimitDate(startTime);
-                Operations operations = ZhihuAlgorithm.calcaulate(quickDay, startTime, holds);
+                Operations operations = new ZhihuAlgorithm().calcaulate(quickDay, startTime, holds);
                 
                 Exchange.ExchangeExecutor.Match(quickDay, startTime, operations, holds);
                 if (startTime.Year != lastDay.Year)

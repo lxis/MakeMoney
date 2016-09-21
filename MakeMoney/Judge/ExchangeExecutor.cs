@@ -30,7 +30,13 @@ namespace Exchange
                     {
                         continue;
                     }
-                    holds.cash = holds.cash - cost;
+                    decimal yongjin = cost * (decimal)0.0003;// 佣金
+                    if (yongjin < 5)
+                    {
+                        yongjin = 5;
+                    }
+                    decimal guohufei = Math.Floor(operation.amount / 1000);// 过户费
+                    holds.cash = holds.cash - cost - yongjin - guohufei;
                     bool isHeld = false;
                     foreach(Hold hold in holds.holds)
                     {
@@ -75,7 +81,15 @@ namespace Exchange
                             decimal benefit = (price - hold.buyPrice) * soldAmount;
                             decimal percent = (price - hold.buyPrice) / hold.buyPrice;
                             ResultContainer.Instance.addTrade( new Trade() { name = hold.stockName, date = time, type = TradeType.Sell });
-                            holds.cash += soldAmount * price;
+                            decimal sellCash = soldAmount * price;                            
+                            decimal yinhuashui = sellCash * (decimal)0.001;// 印花税
+                            decimal yongjin = sellCash * (decimal)0.0003;// 佣金
+                            if (yongjin<5)
+                            {
+                                yongjin = 5;
+                            }
+                            decimal guohufei = Math.Floor(soldAmount / 1000);// 过户费
+                            holds.cash += sellCash - yinhuashui - yongjin - guohufei;
                             break;
                         }
                     }

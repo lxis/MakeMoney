@@ -1,12 +1,13 @@
-﻿using Manager.data;
+﻿using Algorithm.Algorithms;
+using Manager.data;
 using System;
 using System.Collections.Generic;
 
 namespace Algorithm
 {
-    public class MessageAlgorithm
+    public class MessageAlgorithm : IAlgorithm
     {
-        public static Operations calcaulate(QuickDay history, DateTime date, Holds holds)
+        public Operations calcaulate(QuickDay history, DateTime date, Holds holds)
         {
 
             Operations operations = new Operations();

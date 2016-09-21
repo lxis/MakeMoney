@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Algorithm
 {
+    // 操作列表
     public class Operations
     {
         public List<Operation> operations = new List<Operation>();

@@ -9,19 +9,22 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
-            <DataGrid x:Name="tradeResultGrid" ItemsSource="{Binding}" AutoGenerateColumns="True" >
-
-            </DataGrid>
-        </ScrollViewer>
-        
+        <TextBox x:Name="yearSelect" Grid.Row="1" Grid.Column="0" />
+        <TextBox x:Name="monthSelect" Grid.Row="1" Grid.Column="1" />
+        <TextBox x:Name="daySelect" Grid.Row="1" Grid.Column="2" />
+        <ScrollViewer Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">            
+            <DataGrid x:Name="tradeResultGrid" ItemsSource="{Binding}" AutoGenerateColumns="True" />
+        </ScrollViewer>        
         <Button x:Name="analysisTimes" Grid.Row="0" Content="分析交易次数" Grid.Column="0"></Button>
         <Button x:Name="analysisBenefit" Grid.Row="0" Content="分析收益" Grid.Column="1"></Button>
+        <Button x:Name="analysisFlow" Grid.Row="0" Content="分析具体交易" Grid.Column="2"></Button>
     </Grid>
 </Window>
