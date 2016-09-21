@@ -10,7 +10,7 @@ namespace Algorithm
     public class Hold
     {
         public String stockName;
-        public decimal amount;
+        public int amount;
         // 不必须
         public DateTime buyTime;
         public decimal buyPrice;

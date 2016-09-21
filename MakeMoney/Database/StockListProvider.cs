@@ -11,8 +11,8 @@ namespace Database
         public static List<string> getStockNameList()
         {
             List<string> stockNames = new List<string>();
-            //stockNames.Add("000001.ss");//沪指
-            //stockNames.AddRange(getHuStockNameList());
+            stockNames.Add("000001.ss");//沪指
+            stockNames.AddRange(getHuStockNameList());
             stockNames.AddRange(getShenStockNameList());
             return stockNames;
         }

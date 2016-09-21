@@ -25,19 +25,26 @@ namespace MakeMoney
         public AnalysisWindow()
         {
             InitializeComponent();
-            analysisTimes.Click += (s, o) => showTimes();
-            analysisBenefit.Click += (s, o) => showBenefit();
+            analysisTimes.Click += (s, o) => tradeResultGrid.DataContext = new Analyst().getTimesShowText();
+            analysisBenefit.Click += (s, o) => tradeResultGrid.DataContext = new Analyst().getBenefitShowText();
+            analysisFlow.Click += (s, o) =>
+            {
+                int year = getIntFromString(yearSelect.Text);
+                int month = getIntFromString(monthSelect.Text);
+                int day = getIntFromString(daySelect.Text);
+                tradeResultGrid.DataContext = new Analyst().getFlowShowText(year, month, day);
+            };
         }
 
-        private void showTimes()
+        private int getIntFromString(String text)
         {
-            tradeResultGrid.DataContext = new Analyst().getTimesShowText();
-            
-        }
+            if (String.IsNullOrEmpty(text)){
+                return 0;
+            } else
+            {
+                return Convert.ToInt32(text);
+            }
 
-        private void showBenefit()
-        {
-            tradeResultGrid.DataContext = new Analyst().getBenefitShowText();
-        }        
+        }
     }
 }

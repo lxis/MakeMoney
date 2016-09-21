@@ -11,6 +11,10 @@ namespace Analysis
         public TradeType type;
         public string name;
         public DateTime date;
+        public decimal amount;
+        public decimal price;
+        public decimal cash;
+        public decimal fee;
     }
 
     public enum TradeType

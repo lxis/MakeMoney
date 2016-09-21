@@ -31,24 +31,24 @@ namespace MakeMoney
             {
                 click();
             };
-            //DataDownloader.run();
             analysisButton.Click += (s, o) =>
             {
                 navigateToAnalysis();
+            };
+            downloadButton.Click += (s, o) =>
+            {
+                DataDownloader.run();
             };
         }
 
         private void navigateToAnalysis()
         {
-            new AnalysisWindow().Show();
-                
+            new AnalysisWindow().Show();                
         }
 
         private async void click()
         {
             await Manager.Platform.run();
-
-            //showTrades();
         }
 
         private void showTrades()

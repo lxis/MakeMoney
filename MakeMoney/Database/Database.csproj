@@ -77,12 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataDownloader.cs" />
-    <Compile Include="DataLoader.cs" />
     <Compile Include="Const.cs" />
     <Compile Include="data\Day.cs" />
     <Compile Include="data\History.cs" />
-    <Compile Include="data\QuickDay.cs" />
-    <Compile Include="data\Stock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StockListProvider.cs" />
   </ItemGroup>

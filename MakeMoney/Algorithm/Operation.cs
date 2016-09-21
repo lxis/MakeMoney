@@ -11,6 +11,6 @@ namespace Algorithm
     {
         public OperationType Type;
         public String StockName;
-        public decimal amount;
+        public int amount;
     }
 }

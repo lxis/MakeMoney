@@ -8,8 +8,8 @@ namespace Analysis.ShowFormat
 {
     public class TimeShow
     {
-        public string year { get; set; }
-        public string totalTimes { get; set; }
-        public string dailyTimes { get; set; }
+        public string 年 { get; set; }
+        public string 总次数 { get; set; }
+        public string 每日次数 { get; set; }
     }
 }

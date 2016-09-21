@@ -11,6 +11,5 @@ namespace Analysis
         public int year;
         public decimal money;
         public decimal market;
-
     }
 }

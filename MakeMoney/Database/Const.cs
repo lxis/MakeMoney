@@ -10,6 +10,5 @@ namespace Manager
     public class Const
     {
         public const string PATH =  @"D:\Personal\MakeMoney\Github\MakeMoney\Data\";
-        public const string QuickPATH = @"D:\Personal\MakeMoney\Github\MakeMoney\QuickData\";
     }
 }

@@ -7,13 +7,13 @@ namespace Algorithm
 {
     public class MessageAlgorithm : IAlgorithm
     {
-        public Operations calcaulate(QuickDay history, DateTime date, Holds holds)
+        public Operations calcaulate(History history, DateTime date, Holds holds)
         {
 
             Operations operations = new Operations();
             foreach (Hold hold in holds.holds)
             {
-                var day = history.GetDay(hold.stockName, date);
+                var day = history.getDay(hold.stockName, date);
                 if (day == null)
                 {
                     continue;
@@ -27,14 +27,14 @@ namespace Algorithm
             foreach (var stockName in history.stocks.Keys)
             {
                 List<DayResult> days = new List<DayResult>();
-                DayResult currentDay = history.GetDay(stockName, date.AddDays(0));
+                DayResult currentDay = history.getDay(stockName, date.AddDays(0));
                 if (currentDay == null || currentDay.volume == 0)
                 {
                     continue;
                 }
                 for (int i = 1; i < 50; i++)
                 {
-                    DayResult day = history.GetDay(stockName, date.AddDays(-i));
+                    DayResult day = history.getDay(stockName, date.AddDays(-i));
                     if (day != null && day.volume != 0)
                     {
                         days.Add(day);
@@ -77,7 +77,7 @@ namespace Algorithm
         {
             Operation operation = new Operation();
             operation.StockName = stockName;
-            operation.amount = 1000 / currentPrice;
+            operation.amount = (int)(1000 / currentPrice);
             operation.Type = OperationType.Buy;
             return operation;
         }

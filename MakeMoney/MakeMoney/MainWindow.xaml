@@ -14,11 +14,13 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ScrollViewer  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+        <ScrollViewer  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" >
             <TextBlock x:Name="text" Text="显示" />
         </ScrollViewer>
-        <Button x:Name="startButton" Grid.Row="0" Grid.Column="0" Content="开始" ></Button>
-        <Button x:Name="analysisButton" Grid.Row="0" Grid.Column="1" Content="分析"></Button>
+        <Button x:Name="downloadButton" Grid.Row="0" Grid.Column="0" Content="下载" IsEnabled="False" ></Button>
+        <Button x:Name="startButton" Grid.Row="0" Grid.Column="1" Content="测试" ></Button>
+        <Button x:Name="analysisButton" Grid.Row="0" Grid.Column="2" Content="分析"></Button>
     </Grid>
 </Window>
