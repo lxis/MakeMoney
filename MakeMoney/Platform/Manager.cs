@@ -30,10 +30,10 @@ namespace Manager
             while (startTime < endTime)
             {
                 quickDay.SetLimitDate(startTime);
-                Operations operations = new ZhihuAlgorithm().calcaulate(quickDay, startTime, holds);
+                Operations operations = new MessageAlgorithm().calcaulate(quickDay, startTime, holds);
                 
                 Exchange.ExchangeExecutor.Match(quickDay, startTime, operations, holds);
-                if (startTime.Year != lastDay.Year)
+                if (startTime.Year != lastDay.Year || startTime.Month != lastDay.Month)
                 {
                     ResultContainer.Instance.addOutput(startTime.ToString());
                     decimal currentMoney = calculateResult(startTime, quickDay, holds);
@@ -41,7 +41,7 @@ namespace Manager
                     if (currentMoney != -1 && marketResult != null)
                     {
                         lastDay = startTime;
-                        ResultContainer.Instance.addYearResult(new YearResult { year = lastDay.Year, money = currentMoney, market = marketResult.adjClose });
+                        ResultContainer.Instance.addMonthResult(new MonthResult { year = lastDay.Year, month = lastDay.Month, money = currentMoney, market = marketResult.adjClose });
                     }
                 }
                 startTime = startTime.AddDays(1);

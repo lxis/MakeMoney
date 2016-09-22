@@ -26,7 +26,12 @@ namespace MakeMoney
         {
             InitializeComponent();
             analysisTimes.Click += (s, o) => tradeResultGrid.DataContext = new Analyst().getTimesShowText();
-            analysisBenefit.Click += (s, o) => tradeResultGrid.DataContext = new Analyst().getBenefitShowText();
+            analysisBenefit.Click += (s, o) =>
+            {
+                int mode = getIntFromString(modeSelect.Text);
+                int year = getIntFromString(yearSelect.Text);
+                tradeResultGrid.DataContext = new Analyst().getBenefitShowText(mode, year);
+            };
             analysisFlow.Click += (s, o) =>
             {
                 int year = getIntFromString(yearSelect.Text);

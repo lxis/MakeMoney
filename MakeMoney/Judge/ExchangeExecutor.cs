@@ -59,7 +59,8 @@ namespace Exchange
                 amount = soldAmount,
                 price = price,
                 cash = sellCash,
-                fee = fee
+                fee = fee,
+                benefitPercent = (price - hold.buyPrice) / hold.buyPrice                
             });
             holds.cash += sellCash - fee;
         }
@@ -79,6 +80,10 @@ namespace Exchange
 
         private static void buy(DateTime time, Holds holds, Operation operation, decimal price)
         {
+            if (operation.amount % 100 != 0)
+            {
+                return;
+            }
             decimal stockCost = price * operation.amount;
             decimal fee = calculateBuyFee(operation, stockCost);
             decimal totalCost = stockCost + fee;

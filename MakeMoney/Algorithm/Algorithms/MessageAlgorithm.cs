@@ -77,7 +77,8 @@ namespace Algorithm
         {
             Operation operation = new Operation();
             operation.StockName = stockName;
-            operation.amount = (int)(1000 / currentPrice);
+            int hand = (int)(1000 / currentPrice / 100);
+            operation.amount = hand * 100;
             operation.Type = OperationType.Buy;
             return operation;
         }

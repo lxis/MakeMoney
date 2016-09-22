@@ -28,7 +28,7 @@ namespace Algorithm
             foreach (var stockName in history.stocks.Keys)
             {
                 DayResult currentDay = history.getDay(stockName, date.AddDays(0));
-                if (currentDay == null || currentDay.volume == 0 || currentDay.date.Day != 1)
+                if (currentDay == null || currentDay.volume == 0)
                 {
                     continue;
                 }

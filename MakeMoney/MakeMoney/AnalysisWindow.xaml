@@ -16,11 +16,13 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="yearSelect" Grid.Row="1" Grid.Column="0" />
-        <TextBox x:Name="monthSelect" Grid.Row="1" Grid.Column="1" />
-        <TextBox x:Name="daySelect" Grid.Row="1" Grid.Column="2" />
-        <ScrollViewer Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">            
+        <TextBox x:Name="modeSelect" Grid.Row="1" Grid.Column="0" />
+        <TextBox x:Name="yearSelect" Grid.Row="1" Grid.Column="1" />
+        <TextBox x:Name="monthSelect" Grid.Row="1" Grid.Column="2" />
+        <TextBox x:Name="daySelect" Grid.Row="1" Grid.Column="3" />
+        <ScrollViewer Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4">            
             <DataGrid x:Name="tradeResultGrid" ItemsSource="{Binding}" AutoGenerateColumns="True" />
         </ScrollViewer>        
         <Button x:Name="analysisTimes" Grid.Row="0" Content="分析交易次数" Grid.Column="0"></Button>

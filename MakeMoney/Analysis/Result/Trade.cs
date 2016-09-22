@@ -15,6 +15,7 @@ namespace Analysis
         public decimal price;
         public decimal cash;
         public decimal fee;
+        public decimal benefitPercent;
     }
 
     public enum TradeType

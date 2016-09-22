@@ -52,10 +52,6 @@ namespace Manager.data
             var files = directory.GetFiles();
             for (int i = 0; i < files.Count(); i++)
             {
-                if (i>100)
-                {
-                    break;
-                }
                 var file = files[i];
                 var fileReader = file.OpenText();
                 string text = await fileReader.ReadToEndAsync();

@@ -26,7 +26,7 @@ namespace Analysis
         }
 
         private List<Trade> mTrade = new List<Trade>();
-        private List<YearResult> mYearResults = new List<YearResult>();
+        private List<MonthResult> mMonthResults = new List<MonthResult>();
 
 
         public void addOutput(String output)
@@ -49,15 +49,14 @@ namespace Analysis
             return mTrade;
         }        
         
-        public void addYearResult(YearResult yearResult)
+        public void addMonthResult(MonthResult yearResult)
         {
-            mYearResults.Add(yearResult);            
+            mMonthResults.Add(yearResult);            
         }
 
-        public List<YearResult> getYearResults()
+        public List<MonthResult> getMonthResults()
         {
-            return mYearResults;
-        }
-
+            return mMonthResults;
+        }        
     }
 }

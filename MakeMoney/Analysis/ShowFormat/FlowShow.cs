@@ -15,5 +15,6 @@ namespace Analysis.ShowFormat
         public string 股价 { get; set; }
         public string 钱数 { get; set; }
         public string 费用 { get; set; }
+        public string 收益 { get; set; }
     }
 }

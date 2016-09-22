@@ -9,6 +9,7 @@ namespace Analysis.ShowFormat
     public class BenefitShow
     {
         public string 年 { get; set; }
+        public string 月 { get; set; }
         public string 钱 { get; set; }
         public string 收益 { get; set; }
         public string 收益百分比 { get; set; }

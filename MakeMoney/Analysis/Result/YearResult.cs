@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Analysis
 {
-    public class YearResult
+    public class MonthResult
     {
         public int year;
+        public int month;
         public decimal money;
         public decimal market;
     }
