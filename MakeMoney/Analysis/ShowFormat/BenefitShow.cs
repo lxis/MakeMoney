@@ -14,5 +14,7 @@ namespace Analysis.ShowFormat
         public string 收益 { get; set; }
         public string 收益百分比 { get; set; }
         public string 对冲收益百分比 { get; set; }
+        public string 历史收益平均百分比 { get; set; }
+        public string 历史对冲收益平均百分比 { get; set; }
     }
 }

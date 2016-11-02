@@ -31,7 +31,7 @@ namespace Manager
             while (startTime < endTime)
             {
                 quickDay.SetLimitDate(startTime);
-                Operations operations = new BigAlgorithm().calcaulate(quickDay, startTime, holds);
+                Operations operations = new ZhihuAlgorithm().calcaulate(quickDay, startTime, holds);
                 
                 Exchange.ExchangeExecutor.Match(quickDay, startTime, operations, holds);
                 if (startTime.Year != lastDay.Year || startTime.Month != lastDay.Month)

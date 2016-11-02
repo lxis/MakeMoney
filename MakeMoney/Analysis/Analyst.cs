@@ -78,6 +78,8 @@ namespace Analysis
         {
             int successBenefitCount = 0;
             int successHedgeBenefitCount = 0;
+            decimal baseMoney = months[0].money;
+            decimal baseMarkey = months[0].market;
             for (int i = 1; i < months.Count; i++)
             {
                 decimal currentMoney = months[i].money;
@@ -107,7 +109,11 @@ namespace Analysis
                 {
                     successHedgeBenefitCount++;
                 }
-                benefits.Add(new BenefitShow { 年 = months[i].year.ToString(), 月 = months[i].month.ToString(), 钱 = currentMoney.ToString("f2"), 收益 = benefit.ToString("f2"), 收益百分比 = benefitPercentText, 对冲收益百分比 = benefitHedgePercentText });
+                decimal averageBenefitPercent = (decimal)Math.Pow((double)(currentMoney - baseMoney), (double)1 / (double)months.Count);
+                string averageBenefitPercentText = (averageBenefitPercent * 100).ToString("f2") + "%";
+                decimal averageMarketBenefitPercent = (decimal)Math.Pow((double)(currentMarket - baseMoney), (double)1 / (double)months.Count);
+                string averageMarketBenefitPercentText = (averageMarketBenefitPercent * 100).ToString("f2") + "%";
+                benefits.Add(new BenefitShow { 年 = months[i].year.ToString(), 月 = months[i].month.ToString(), 钱 = currentMoney.ToString("f2"), 收益 = benefit.ToString("f2"), 收益百分比 = benefitPercentText, 对冲收益百分比 = benefitHedgePercentText, 历史收益平均百分比 = averageBenefitPercentText, 历史对冲收益平均百分比 = averageMarketBenefitPercentText });
             }
             benefits.Insert(0, new BenefitShow()
             {
